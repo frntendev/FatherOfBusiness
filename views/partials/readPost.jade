@@ -1,0 +1,15 @@
+section.readpost
+<<<<<<< HEAD
+  div.readpostTitle عنوان فصل :  {{post.SeasenDetile.SeasenTitle}}
+  div.post.col-md-12(ng-repeat='post in post.Sections | filter: search')
+    div.options.col-md-12
+      h3 {{$index + 1}} - {{post.SectionName}}
+      div {{post.SectionContent.toString().substring(0, 256)}} ...
+      a(href='/readItem/{{$index}}') مشاهده
+      a(href='/editItem/{{$index}}') ویرایش
+      a(href='/deleteItem/{{$index}}') حذف
+=======
+  img(src='images/{{post.image}}.png')
+  h3 {{post.title}}
+  div {{post.text}}
+>>>>>>> aa34523e29c577f9f9d008989792a8efbe4fcdf1

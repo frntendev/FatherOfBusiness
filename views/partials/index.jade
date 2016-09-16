@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+div.col-md-12
+  div.post.col-md-4.col-xs-12(ng-repeat='post in posts | filter: search')
+    div.options.mainItems
+      a(href='/readPost/{{post.id}}') {{$index}} - {{post.SeasenTitle}}
+
+=======
+div.post.col-md-12(ng-repeat='post in posts | filter: search')
+  div.col-md-6
+    img(src='images/{{post.image}}.png')
+  div.options.col-md-6
+    h3 {{post.title}}
+    div {{post.text}}
+    a(href='/readPost/{{post.id}}') مشاهده
+    |   
+    a(href='/editPost/{{post.id}}') ویرایش
+    |   
+    a(href='/deletePost/{{post.id}}') حذف
+>>>>>>> aa34523e29c577f9f9d008989792a8efbe4fcdf1

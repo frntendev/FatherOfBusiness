@@ -1,0 +1,11 @@
+div.addPost.col-md-12
+    div.col-md-6
+        h2 ویرایش پست
+        label(for='SectionName') عنوان
+        div.form-group
+            label(for='SectionName')
+            input.form-control(ng-model='form.SectionName', name='SectionName')
+            label(for='SectionContent') متن
+            div.form-group
+            textarea.form-control(ng-model='form.SectionContent', cols='50', rows='15',name="SectionContent")
+            button(ng-click='editItem()') ذخیره

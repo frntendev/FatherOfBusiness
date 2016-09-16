@@ -1,0 +1,27 @@
+div.addPost.col-md-12
+  div.col-md-6
+    h2 نوشتن پست جدید
+<<<<<<< HEAD
+    div.form-group
+      div.form-group
+      label(for='post') فصل
+      select.form-control(ng-model='form.post',name='Item')
+        option(value=1) 1- افراد موفق
+        option(value=2) 2- بازاریابی و فروش
+        option(value=3) 3- مشتری مداری
+        option(value=4) 4- مدیریت کسب و کار
+        option(value=5) 5- بازاریابی
+        option(value=6) 6- بازاریابی شبکه ای
+      label(for='title') عنوان
+      input.form-control(ng-model='form.title', name='title')
+      label(for='text') متن
+=======
+    label(for='title') عنوان
+    div.form-group
+      label(for='title')
+      input.form-control(ng-model='form.title', name='title')
+      label(for='text') متن
+      div.form-group
+>>>>>>> aa34523e29c577f9f9d008989792a8efbe4fcdf1
+      textarea.form-control(ng-model='form.text', cols='50', rows='15',name="text")
+      button(ng-click='submitPost()') ارسال
